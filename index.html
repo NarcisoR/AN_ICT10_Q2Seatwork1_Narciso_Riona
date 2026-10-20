@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT10 Q2 SW1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #252d5e;
+            color: #fff;
+        }
+        input {
+            font-size: 20px;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        button {
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+        } 
+        
+        h1{
+            font-size: 35px;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+
+        .box {
+            background-color: #1e1e2f98;
+            max-width: 600px;
+            padding: 20px;
+            border: 4px dashed #e48960;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        .btn-success{
+            background-color: rgb(75, 159, 75);
+            color: white;
+        }
+        .btn-danger{
+            background-color:#d75050;
+            color: white;
+        }   
+
+    </style>
+</head>
+<body class="container mt-5">
+    <h1>🏐 ✦Volleyball Varsity Members✦ 🏐</h1>
+    <p>Enter member name to add or delete:</p>
+
+    <div class="box">
+    
+    <input type="text" id="firstname" placeholder="Enter member's first name">
+    <input type="text" id="lastname" placeholder="Enter member's last name">
+    <br>
+    <button type="button" class="btn btn-success" py-click = "append_value">ADD</button>
+    <button type="button" class="btn btn-danger" py-click = "delete_value">DELETE</button>
+
+    <h3>Attendance</h3>
+    <div id="output"></div>
+    <p id="message"></p>
+
+    <py-script src="main.py"></py-script>
+    </div>
+</body>
+</html>
